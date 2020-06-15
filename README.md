@@ -1,9 +1,10 @@
 # WTF
 
 Creating an Angular library is much different than a SPA application.  
-First the project must live in a multiproject workspace.
-2nd the library folder itself will automatically contain a sing component, module, and service.
-It will also contain a public-api.ts file which exposes library content to the consumer.
+
+- First the project must live in a multiproject workspace.
+- 2nd the library folder itself will automatically contain a sing component, module, and service.
+-It will also contain a public-api.ts file which exposes library content to the consumer.
 
 This project was [discussed here](https://dev.to/jwp/fa-icon-problems-in-angular-library-project-47g5)
 
