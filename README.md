@@ -1,27 +1,16 @@
 # WTF
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Creating an Angular library is much different than a SPA application.  
+First the project must live in a multiproject workspace.
+2nd the library folder itself will automatically contain a sing component, module, and service.
+It will also contain a public-api.ts file which exposes library content to the consumer.
 
-## Development server
+This project was [discussed here](https://dev.to/jwp/fa-icon-problems-in-angular-library-project-47g5)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+and [here](https://dev.to/jwp/angular-libraries-fontawesome-1j1p)
 
-## Code scaffolding
+In the project folder are two folders 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- TestTheLib : is an Angular application which imports content from the lib project.  Use ng serve in that folder to see it.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Lib : This is the folder containing resusable parts.

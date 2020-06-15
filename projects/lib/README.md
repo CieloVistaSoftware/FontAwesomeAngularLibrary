@@ -1,24 +1,12 @@
 # Lib
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+The ngPackage contains the "entry-point" to the library.  The AOT compiler needs this..
 
-## Code scaffolding
+The package.json file lists only peer dependencies
 
-Run `ng generate component component-name --project lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project lib`.
-> Note: Don't forget to add `--project lib` or else it will be added to the default project in your `angular.json` file. 
+The src folder contains the important publi-api.ts file which must export the correct stuff (for consumers) and for the compile itself.
 
-## Build
+The lib folder shows the default component, module and service files but adds a new folder named component-within. This was done to represent a "normal" Angular component with it's own folder.
 
-Run `ng build lib` to build the project. The build artifacts will be stored in the `dist/` directory.
+This gives us a pattern to import other folders from other projects.
 
-## Publishing
-
-After building your library with `ng build lib`, go to the dist folder `cd dist/lib` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test lib` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
