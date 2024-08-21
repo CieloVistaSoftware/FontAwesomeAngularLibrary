@@ -7,12 +7,14 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "strict": true,
+    "target": "ESNext",
     "lib": [
-      "es2018",
+      "ESNext",
       "dom"
     ],
     "paths": {
